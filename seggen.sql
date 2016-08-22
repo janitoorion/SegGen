@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-08-2016 a las 21:39:11
+-- Tiempo de generación: 22-08-2016 a las 16:36:48
 -- Versión del servidor: 5.6.17
 -- Versión de PHP: 5.5.12
 
@@ -440,7 +440,7 @@ INSERT INTO `glob_menu` (`id`, `texto`, `texto_en`, `url`, `id_padre`, `icono`, 
 (13, 'Preguntas', 'Preguntas', '', 4, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 7, 1),
 (1, 'Sistema', 'System', '', 0, '<i class="fa fa-lg fa-fw txt-color-blue fa-cogs"></i>', 1, 1),
 (11, 'Fórmulas', 'Fórmulas', '', 4, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 5, 1),
-(3, 'Mant. de Usuarios', 'User List', 'Sistema/Usuario/listaUsuarios', 1, '<i class="fa fa-lg fa-fw txt-color-blue fa-users"></i> ', 1, 1),
+(3, 'Mant. de Usuarios', 'User List', 'Sistema/Usuario/listaUsuarios', 1, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 1, 1),
 (15, 'Aplicaciones', 'Aplicaciones', '', 4, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 9, 1),
 (14, 'Parámetros', 'Parámetros', '', 4, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 8, 1),
 (2, 'Productos', 'Productos', '', 0, '<i class="fa fa-lg fa-fw txt-color-blue fa-cubes"></i>', 2, 1),
@@ -466,8 +466,26 @@ INSERT INTO `glob_menu` (`id`, `texto`, `texto_en`, `url`, `id_padre`, `icono`, 
 (27, 'Adm. de Tipos de Mov.', 'Administración de Tipos de Movimiento', '', 19, '<i class="fa fa-lg fa-fw txt-color-blue fa-folder-open"></i> ', 8, 1),
 (28, 'Adm. de Políticas de autorización', 'Administración de Políticas de autorización', '', 19, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 9, 1),
 (29, 'Alta de Productos', 'Alta de Productos', '', 19, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 10, 1),
+(32, 'Parámetros de sistema', 'Parámetros de sistema', '', 1, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 2, 1),
 (30, 'Adm. de Secuencia de Pantallas', 'Adm. de Secuencia de Pantallas', '', 27, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 1, 1),
-(31, 'Adm. de Validaciones de Secuencia de Pantallas', 'Adm. de Validaciones de Secuencia de Pantallas', '', 27, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 2, 1);
+(31, 'Adm. de Validaciones de Secuencia de Pantallas', 'Adm. de Validaciones de Secuencia de Pantallas', '', 27, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 2, 1),
+(33, 'Literales', 'Literales', '', 1, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 3, 1),
+(34, 'Cargos', 'Cargos', '', 1, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 4, 1),
+(35, 'Ciclos', 'Ciclos', '', 0, '<i class="fa fa-lg fa-fw txt-color-blue fa-refresh"></i>', 3, 1),
+(36, 'Producción', 'Producción', '', 0, '<i class="fa fa-lg fa-fw txt-color-blue fa-archive"></i>', 4, 1),
+(37, 'Parámetros', 'Parámetros', '', 35, '<i class="fa fa-lg fa-fw txt-color-blue fa-folder-open"></i> ', 1, 1),
+(38, 'Estados', 'Estados', '', 37, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 1, 1),
+(39, 'Sub Estados', 'Sub Estados', '', 37, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 1, 1),
+(40, 'Orden de estados y sub estados', 'Orden de estados y sub estados', '', 37, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 1, 1),
+(41, 'Nuevo Ciclo', 'Nuevo Ciclo', '', 35, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 2, 1),
+(42, 'Asignación de Ciclos', 'Asignación de Ciclos', '', 35, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 3, 1),
+(43, 'Consulta de Ciclos', 'Consulta de Ciclos', '', 35, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 4, 1),
+(44, 'Entrega de Documentos', 'Entrega de Documentos', '', 35, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 5, 1),
+(45, 'Nueva Póliza', 'Nueva Póliza', '', 36, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 1, 1),
+(46, 'Nuevo Endoso', 'Nuevo Endoso', '', 36, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 2, 1),
+(47, 'Nueva Póliza Madre', 'Nueva Póliza Madre', '', 36, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 3, 1),
+(48, 'Producción Pendiente', 'Producción Pendiente', '', 36, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 4, 1),
+(49, 'Autorización de Producción', 'Autorización de Producción', '', 36, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 5, 1);
 
 -- --------------------------------------------------------
 
@@ -519,7 +537,25 @@ INSERT INTO `glob_menu_perfil` (`id`, `id_sistema`, `id_perfil`, `id_menu`, `est
 (28, 1, 1, 28, 1),
 (29, 1, 1, 29, 1),
 (30, 1, 1, 30, 1),
-(31, 1, 1, 31, 1);
+(31, 1, 1, 31, 1),
+(32, 1, 1, 32, 1),
+(33, 1, 1, 33, 1),
+(34, 1, 1, 34, 1),
+(35, 1, 1, 35, 1),
+(36, 1, 1, 36, 1),
+(37, 1, 1, 37, 1),
+(38, 1, 1, 38, 1),
+(39, 1, 1, 39, 1),
+(40, 1, 1, 40, 1),
+(41, 1, 1, 41, 1),
+(42, 1, 1, 42, 1),
+(43, 1, 1, 43, 1),
+(44, 1, 1, 44, 1),
+(45, 1, 1, 45, 1),
+(46, 1, 1, 46, 1),
+(47, 1, 1, 47, 1),
+(48, 1, 1, 48, 1),
+(49, 1, 1, 49, 1);
 
 -- --------------------------------------------------------
 
@@ -688,7 +724,7 @@ CREATE TABLE IF NOT EXISTS `glob_usuarios` (
   `estado` int(1) NOT NULL,
   `rut_empresa` varchar(15) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Volcado de datos para la tabla `glob_usuarios`
