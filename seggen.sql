@@ -486,7 +486,7 @@ INSERT INTO `glob_menu` (`id`, `texto`, `texto_en`, `url`, `id_padre`, `icono`, 
 (47, 'Nueva Póliza Madre', 'Nueva Póliza Madre', '', 36, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 3, 1),
 (48, 'Producción Pendiente', 'Producción Pendiente', '', 36, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 4, 1),
 (49, 'Autorización de Producción', 'Autorización de Producción', '', 36, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 5, 1);
-
+ 
 -- --------------------------------------------------------
 
 --
