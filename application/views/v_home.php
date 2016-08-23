@@ -105,7 +105,7 @@
 		<header id="header">
 			<div id="logo-group">
 				<!-- PLACE YOUR LOGO HERE -->
-				<span id="logo"> <img src="assets/img/logo-light.png" alt="SmartAdmin"> </span>
+				<!--<span id="logo"> <img src="assets/img/logo-light.png" alt="SmartAdmin"> </span>-->
 				<!-- END LOGO PLACEHOLDER -->
 			</div>
 						
@@ -229,7 +229,7 @@
 		<div class="page-footer">
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
-					<span class="txt-color-white"><?= $this->lang->line('descripcionApp', FALSE) ?> <span class="hidden-xs"> - AFCR</span> © 2016</span>
+					<!-- <span class="txt-color-white"><?= $this->lang->line('descripcionApp', FALSE) ?> <span class="hidden-xs"> - AFCR</span> © 2016</span> -->
 				</div>
 
 				
@@ -238,6 +238,14 @@
 			<!-- end row -->
 		</div>
 		<!-- END FOOTER -->
+
+		<div class="modal fade" id="remoteModal" tabindex="-1" role="dialog" aria-labelledby="remoteModalLabel" aria-hidden="true">  
+    <div class="modal-dialog" style="width:950px;">  
+        <div class="modal-content">
+            <!-- content will be filled here from "ajax/modal-content/model-content-1.html" -->
+        </div>  
+    </div>  
+</div>  
 		
 		<!--================================================== -->
 
@@ -316,7 +324,12 @@
 
 		<!-- SmartChat UI : plugin -->
 		<script src="assets/js/smart-chat-ui/smart.chat.ui.min.js"></script>
-		<script src="assets/js/smart-chat-ui/smart.chat.manager.min.js"></script>
+		<script src="assets/js/plugin/datatables/jquery.dataTables.min.js"></script>
+		<script src="assets/js/plugin/datatables/dataTables.colVis.min.js"></script>
+		<script src="assets/js/plugin/datatables/dataTables.tableTools.min.js"></script>
+		<script src="assets/js/plugin/datatables/dataTables.bootstrap.min.js"></script>
+		<script src="assets/js/plugin/datatable-responsive/datatables.responsive.min.js"></script>
+
         		
 		<script src="assets/js/globales.js"></script>
         <script type="text/javascript">
