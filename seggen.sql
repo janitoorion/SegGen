@@ -3,10 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-08-2016 a las 16:36:48
+-- Tiempo de generación: 23-08-2016 a las 23:04:26
 -- Versión del servidor: 5.6.17
 -- Versión de PHP: 5.5.12
---FBM asdasdasd
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -455,7 +454,7 @@ INSERT INTO `glob_menu` (`id`, `texto`, `texto_en`, `url`, `id_padre`, `icono`, 
 (8, 'Planes', 'Planes', '', 4, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 2, 1),
 (16, 'Tipos de Movimientos', 'Tipos de Movimientos', '', 4, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 10, 1),
 (17, 'Mant. de productos', 'Mantenedor de productos', '', 2, '<i class="fa fa-lg fa-fw txt-color-blue fa-folder-open"></i> ', 3, 1),
-(18, 'Nuevo Producto', 'Nuevo Producto', '', 17, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 1, 1),
+(18, 'Nuevo Producto', 'Nuevo Producto', 'Demo/Demo/Index/NuevoProducto', 17, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 1, 1),
 (19, 'Adm. de Productos', 'Administrador de Productos', '', 17, '<i class="fa fa-lg fa-fw txt-color-blue fa-folder-open"></i> ', 2, 1),
 (20, 'Adm. de planes', 'Administración de planes', '', 19, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 1, 1),
 (21, 'Adm. de coberturas', 'Administración de coberturas', '', 19, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 2, 1),
@@ -486,8 +485,10 @@ INSERT INTO `glob_menu` (`id`, `texto`, `texto_en`, `url`, `id_padre`, `icono`, 
 (46, 'Nuevo Endoso', 'Nuevo Endoso', '', 36, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 2, 1),
 (47, 'Nueva Póliza Madre', 'Nueva Póliza Madre', '', 36, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 3, 1),
 (48, 'Producción Pendiente', 'Producción Pendiente', '', 36, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 4, 1),
-(49, 'Autorización de Producción', 'Autorización de Producción', '', 36, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 5, 1);
- 
+(49, 'Autorización de Producción', 'Autorización de Producción', '', 36, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i> ', 5, 1),
+(51, 'Modificar Producto', 'Modificar Producto', 'Demo/Demo/Index/ModificarProducto', 17, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i>', 1, 0),
+(50, 'Productos', 'Productos', 'Demo/Demo/Index/ListadoProductos', 17, '<i class="fa fa-lg fa-fw txt-color-blue fa-cube"></i>', 1, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -556,7 +557,9 @@ INSERT INTO `glob_menu_perfil` (`id`, `id_sistema`, `id_perfil`, `id_menu`, `est
 (46, 1, 1, 46, 1),
 (47, 1, 1, 47, 1),
 (48, 1, 1, 48, 1),
-(49, 1, 1, 49, 1);
+(49, 1, 1, 49, 1),
+(50, 1, 1, 50, 1),
+(51, 1, 1, 51, 1);
 
 -- --------------------------------------------------------
 
